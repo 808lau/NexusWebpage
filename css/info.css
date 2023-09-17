@@ -1,0 +1,29 @@
+.about-us{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 4em;
+}
+.about-us h2{
+    font-size: 3em;
+}
+.about-us p{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.propuesta{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: left;
+    padding: 4em;
+}
+.propuesta h2{
+    font-size: 3em;
+}
+.propuesta p{
+    font-size: 1.4em;
+    font-weight: 500;
+}

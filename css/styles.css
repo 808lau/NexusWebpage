@@ -1,0 +1,315 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+/* Variables */
+:root {
+    --dark-color:#0A0903;
+    --light-color:#F0F2EF;
+    --main-color:#FFC100;
+    --alt-color:#D8DBE2;
+    --accent-color:#731DD8;
+}
+:root {
+    --xs:25px;
+    --small:50px;
+    --medium:70px;
+    --large:100px;
+    --xl:150px;
+}
+
+:root {
+    --mobiletext:1rem;
+}
+
+/* Big brain move */
+html {
+    font-size: var(--mobiletext);
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+/* Header */    
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    background-color: var(--light-color);
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.header .nex{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.header .nex h1{
+    /* Add Correct Margin/Display in Mobile */
+    color: var(--dark-color);
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    text-decoration: underline var(--main-color);
+}
+
+.header nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0;
+    list-style:none ;
+}
+
+.header nav ul li a:any-link{
+    font-family: 'Oswald', sans-serif;
+    color: var(--dark-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.header nav ul li {
+    background-color: var(--alt-color);
+    padding: 0.7em;
+    margin: 0 1em;
+    border-radius: 0.7rem;
+}
+.header nav ul li:hover {
+    transition: all 0.3s 0.1s ease-in-out;
+    box-shadow: 0.5px 0.8px 1px 1px var(--main-color);
+    font-size: 1.05em;
+    border-radius: 0rem;
+}
+/*  */
+
+/* Slideshow */
+.slideshow {
+    padding: 0;
+    margin: 0;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/*  */
+
+/* Links */
+.links {
+/* Set Flex flow column for mobile devices later */
+}
+.links .boton{
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.links .boton a:any-link{
+    color: var(--main-color);
+    text-shadow: 3px 3px 2px var(--dark-color);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+.links .boton a:hover, .links .boton a:focus {
+    font-size: 1.8em;
+    transition: all 0.5s 0.1s ease-out;
+}
+.links .boton:nth-child(1){ 
+    background: url(img/ServicioTecnico.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.links .boton:nth-child(2){ 
+    background: url(img/ArmadoPc.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.links .boton:nth-child(3){ 
+    background: url(img/DesarolloWeb.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*  */
+
+/* Texto */
+.texto {
+    background-color: var(--light-color);
+}
+
+.texto .col-xs-12{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.texto .foco {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 0 auto;
+}
+.texto .bigtext{
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto .midtext{
+    font-size: 2em;
+    font-weight: 700;
+}
+.texto .smtext{
+    font-size: 1.5em;
+    margin: 0 2rem;
+}
+/*  */
+
+/* Contacto */
+.contacto .col-xs-12{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.contacto h2{   
+    align-self: center;
+    font-size: 2.3em;
+    margin: 1em;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+}
+.contacto p{
+    align-self: flex-start;
+    margin: 0.5em;
+    font-size:1.5em;
+    padding: 0.5em;
+}
+.icono-contacto {
+    height:2.4em;
+}
+.contacto p{
+    color: var(--dark-color);
+    font-weight: 500;
+}
+.contacto a:any-link{
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+.contacto p:hover{
+    font-size: 1.65em;
+    transition: all 0.3s 0.1s ease-in;
+}
+/*  */
+
+/* Video */
+.video {
+    background-color: var(--light-color);
+    padding: 1em 0;
+}
+.video .col-xs-12 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    max-height: 100%;
+    overflow: hidden; /* This will hide any overflow beyond the container */
+}
+.video .col-xs-12 h2{
+    align-self: center;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+}
+.video video {
+    height: auto; /* Maintain the video's aspect ratio */
+}
+/*  */
+
+/* instagram */
+.instagram {
+    padding: 1em 0;
+}
+.instagram .col-xs-12 iframe{
+    height:7em;
+}
+/*  */
+
+/* footer */
+.footer {
+    background-color: var(--light-color);
+    padding: 4em auto;
+    border-top: 3px solid var(--accent-color);
+}
+.footer .col-sm-4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer .col-sm-4 ul{
+    font-size: 1.2em;
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+}
+.footer li {
+    padding: 0.3em 0;
+}
+.footer a:any-link{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+/*  */
+
+/*  */
+
+/* @media (max-width: 575px) {
+    :root {
+        --mobiletext:0.6rem;
+    }
+}
+@media (min-width: 576px) {
+    :root {
+        --mobiletext:0.9rem;
+    }
+  } */
