@@ -264,7 +264,7 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     max-height: 100%;
-    overflow: hidden; /* This will hide any overflow beyond the container */
+    overflow: hidden; 
 }
 .video .col-xs-12 h2{
     align-self: center;
@@ -276,7 +276,7 @@ body {
     text-decoration-skip-ink: auto;
 }
 .video video {
-    height: auto; /* Maintain the video's aspect ratio */
+    height: auto; 
 }
 /*  */
 
